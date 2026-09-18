@@ -1,0 +1,15 @@
+name: Exemplo de esteira
+
+on: 
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs: 
+  configuracao-conexao-mainframe: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conectando no mainframe
+        run: |
+          echo "Conectado!"
